@@ -5,3 +5,4 @@ torchvision==0.17.2
 pillow
 python-multipart
 pytest
+httpx==0.27.*
