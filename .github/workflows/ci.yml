@@ -5,7 +5,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     env:
-      SKIP_MODEL_LOAD: "1"
+      SKIP_MODEL_LOAD: "1"   # モデル無しで起動（main.pyのDummyModelを使用）
     steps:
       - uses: actions/checkout@v4
 
@@ -13,5 +13,16 @@ jobs:
         with:
           python-version: "3.11"
 
-      - run: pip install -r requirements.txt
-      - run: pytest -q
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Show env & deps
+        run: |
+          python -V
+          pip freeze
+          ls -la
+          echo "PYTHONPATH=$PYTHONPATH"
+          echo "GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
+
+      - name: Run tests (verbose)
+        run: pytest -vv --maxfail=1 -rA
