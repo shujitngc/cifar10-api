@@ -1,12 +1,11 @@
 name: CI
-on: [push, pull_request]
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   test:
     runs-on: ubuntu-latest
     env:
-      SKIP_MODEL_LOAD: "1"   # 
-モデルがなくてもAPIが起動できるように（main.pyのパッチ対応）
+      SKIP_MODEL_LOAD: "1"
     steps:
       - uses: actions/checkout@v4
 
@@ -16,4 +15,3 @@ jobs:
 
       - run: pip install -r requirements.txt
       - run: pytest -q
-
