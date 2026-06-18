@@ -7,7 +7,7 @@
 Python / PyTorch / FastAPI / Docker / Render
 
 ## API URL
-https://xxxxx.onrender.com/docs
+https://cifar10-api-7440.onrender.com/docs
 
 ## エンドポイント
 GET /health
