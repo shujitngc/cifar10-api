@@ -1,3 +1,25 @@
-# cifar10-api
-![CI](https://github.com/shujitngc/cifar10-api/actions/workflows/ci.yml/badge.svg)
-- CI trial run at 2025年 9月28日 日曜日 11時39分38秒 JST
+# CIFAR-10 Image Classification API
+
+## 概要
+画像をアップロードすると、CIFAR-10の10クラスに分類するAPIです。
+
+## 使用技術
+Python / PyTorch / FastAPI / Docker / Render
+
+## API URL
+[https://xxxxx.onrender.com/docs](https://cifar10-api-7440.onrender.com/docs)
+
+## エンドポイント
+GET /health
+GET /labels
+POST /predict
+
+## 実行方法
+docker build
+docker run
+
+## 工夫した点
+- FastAPIで推論API化
+- Docker対応
+- Renderにデプロイ
+- 画像サイズ制限とMIMEチェックを実装
