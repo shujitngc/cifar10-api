@@ -10,6 +10,7 @@ Python / PyTorch / FastAPI / Docker / Render / GitHub
 
 ## 使用技術
 分類クラス
+
 airplane / automobile / bird / cat / deer / dog / frog / horse / ship / truck
 
 ## API URL
