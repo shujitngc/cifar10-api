@@ -8,9 +8,7 @@ FastAPIを用いて推論APIを構築し、Dockerによるコンテナ化を行�
 ## 使用技術
 Python / PyTorch / FastAPI / Docker / Render / GitHub
 
-## 使用技術
-分類クラス
-
+## 分類クラス
 airplane / automobile / bird / cat / deer / dog / frog / horse / ship / truck
 
 ## API URL
