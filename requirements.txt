@@ -5,3 +5,5 @@ torchvision==0.17.2
 pillow
 python-multipart
 numpy<2
+streamlit
+requests
