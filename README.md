@@ -14,6 +14,10 @@ airplane / automobile / bird / cat / deer / dog / frog / horse / ship / truck
 ## API URL
 https://cifar10-api-7440.onrender.com/docs
 
+## Demo App
+Streamlitで作成したデモ画面です。画像をアップロードすると、Render上のFastAPIにリクエストを送り、分類結果を表示します。
+https://cifar10-api-fnnjgyxvusvnetqxslbyjd.streamlit.app/
+
 ## エンドポイント
 GET /health
 GET /labels
